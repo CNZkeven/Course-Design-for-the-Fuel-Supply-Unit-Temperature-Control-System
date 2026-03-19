@@ -100,7 +100,7 @@ env PATH="/home/kevenchow/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.
 
 ## 相关文件
 
-- 温度换算实现：[temp_conversion.c](/home/kevenchow/桌面/KS/code/USER/temp_conversion.c)
-- DAC 输出映射实现：[control_output.c](/home/kevenchow/桌面/KS/code/USER/control_output.c)
-- 主循环控制逻辑：[main.c](/home/kevenchow/桌面/KS/code/USER/main.c)
-- 详细说明文档：[temperature.md](/home/kevenchow/桌面/KS/code/temperature.md)
+- 温度换算实现：[temp_conversion.c](/code/USER/temp_conversion.c)
+- DAC 输出映射实现：[control_output.c](/code/USER/control_output.c)
+- 主循环控制逻辑：[main.c](/code/USER/main.c)
+- 详细说明文档：[temperature.md](/code/temperature.md)
