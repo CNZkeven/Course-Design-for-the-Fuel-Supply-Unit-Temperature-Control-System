@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HEX_PATH="$SCRIPT_DIR/build/ITEMP.hex"
+
+if ! command -v JLinkExe >/dev/null 2>&1; then
+  echo "Error: JLinkExe not found in PATH." >&2
+  echo "Please install SEGGER J-Link tools or add JLinkExe to PATH." >&2
+  exit 1
+fi
+
+if [[ ! -f "$HEX_PATH" ]]; then
+  echo "Error: HEX file not found: $HEX_PATH" >&2
+  echo "Please build the project first to generate build/ITEMP.hex." >&2
+  exit 1
+fi
+
+cd "$SCRIPT_DIR"
+JLinkExe -CommandFile "$SCRIPT_DIR/download.jlink"

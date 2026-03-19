@@ -1,0 +1,158 @@
+QWidget {
+  background: #f3f5f7;
+  color: #111827;
+  font-family: "Segoe UI";
+  font-size: 14px;
+}
+
+QFrame#card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+QFrame#cardShadow {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+QFrame#cardShadow::before {
+  content: "";
+}
+
+QFrame#card[type="serial"] {
+  border-left: 5px solid #2563eb;
+}
+
+QFrame#card[type="control"] {
+  border-left: 5px solid #16a34a;
+}
+
+QFrame#card[type="params"] {
+  border-left: 5px solid #f59e0b;
+}
+
+QFrame#card[type="status"] {
+  border-left: 5px solid #dc2626;
+}
+
+QLabel#cardTitle {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+QFrame#plotHeader {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+QLabel#plotTitle {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+QFrame#card[type="serial"] QLabel#cardTitle {
+  color: #2563eb;
+}
+
+QFrame#card[type="control"] QLabel#cardTitle {
+  color: #16a34a;
+}
+
+QFrame#card[type="params"] QLabel#cardTitle {
+  color: #f59e0b;
+}
+
+QFrame#card[type="status"] QLabel#cardTitle {
+  color: #dc2626;
+}
+
+QFrame#kpiCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+QLabel#kpiTitle {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+QLabel#kpiValue {
+  color: #111827;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+QLabel#kpiUnit {
+  color: #6b7280;
+  margin-left: 4px;
+}
+
+QFrame#statusLight {
+  background: transparent;
+}
+
+QFrame#statusDot {
+  min-width: 12px;
+  min-height: 12px;
+  max-width: 12px;
+  max-height: 12px;
+  border-radius: 6px;
+  background: #d1d5db;
+}
+
+QFrame#statusDot[state="on"] {
+  background: #22c55e;
+}
+
+QFrame#statusDot[state="off"] {
+  background: #9ca3af;
+}
+
+QFrame#statusDot[state="alarm"] {
+  background: #ef4444;
+}
+
+QPushButton {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+QPushButton#btnStart {
+  background: #16a34a;
+}
+
+QPushButton#btnStop {
+  background: #dc2626;
+}
+
+QPushButton:disabled {
+  background: #9ca3af;
+}
+
+QTextEdit {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+QLineEdit, QComboBox {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+  border: 1px solid #2563eb;
+}

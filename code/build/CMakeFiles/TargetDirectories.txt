@@ -1,0 +1,3 @@
+/home/kevenchow/桌面/KS/code/build/CMakeFiles/ITEMP.elf.dir
+/home/kevenchow/桌面/KS/code/build/CMakeFiles/edit_cache.dir
+/home/kevenchow/桌面/KS/code/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,9 @@
+device STM32F407ZG
+if SWD
+speed auto
+connect
+r
+loadfile build/ITEMP.hex
+r
+g
+exit
