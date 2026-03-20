@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-/* 根据带零点偏置的 ADC 标定把原始值换算为温度值。 */
+/* Convert raw ADC code to temperature in Celsius. */
 float adc2temp(uint16_t adc_value);
 
 #endif
